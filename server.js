@@ -26,6 +26,7 @@ app.use('/api/customer', require('./routes/customerRoutes'));
 app.use('/api/sale', require('./routes/saleRoutes'));
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/dashboard', require('./routes/dashboardRoutes'));
+app.use('/api/settings', require('./routes/settingsRoutes')); // ✅ New settings route added
 
 // ✅ Test route
 app.get('/', (req, res) => {
